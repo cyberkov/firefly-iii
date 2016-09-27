@@ -8,6 +8,7 @@ before_script:
   - mysql -e 'create database firefly_test;'
   - composer self-update
   - composer install --no-interaction
+  - php artisan migrate --seed --env=testing
 
 script:
   - vendor/bin/phpunit --coverage-text
