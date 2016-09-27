@@ -11,7 +11,7 @@ before_script:
   - if [[ "$DB_CONNECTION" == "pgsql" ]]; then psql -c "DROP DATABASE IF EXISTS firefly_test;" -U postgres; fi
   - if [[ "$DB_CONNECTION" == "pgsql" ]]; then psql -c "create database firefly_test;" -U postgres; fi
   - if [[ "$DB_CONNECTION" == "mysql" ]]; then mysql -e "create database IF NOT EXISTS firefly_test;" -uroot; fi
-  - if [[ "$DB_CONNECTION" == "sqlite" ]]; then touch database/database.sqlite; fi
+  - if [[ "$DB_CONNECTION" == "sqlite" ]]; then touch firefly_test; fi
   - composer self-update
   - composer install --no-interaction
   - php artisan migrate --seed --env=testing
