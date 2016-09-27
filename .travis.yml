@@ -10,5 +10,5 @@ before_script:
   - composer install --no-interaction
   - php artisan migrate --seed --env=testing
 
-script:
-  - vendor/bin/phpunit --coverage-text
+#script:
+#  - vendor/bin/phpunit --coverage-text
