@@ -1,4 +1,7 @@
 language: php
+addons:
+  code_climate:
+    repo_token: 8552db229501e4740a2c8e1c9e6269e48bbbf2001592033ff4209b286eb8a12f
 
 php:
   - 7.0
@@ -17,3 +20,5 @@ before_script:
   - php artisan migrate --seed --env=testing
 #script:
 #  - vendor/bin/phpunit --coverage-text
+after_script:
+  - vendor/bin/test-reporter
