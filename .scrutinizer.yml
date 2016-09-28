@@ -6,3 +6,12 @@ filter:
         - app/Support/Migration/*
         - app/database/migrations/*
         - database/migrations/*
+build:
+  tests:
+    override:
+      - coverage:
+          file: 'storage/logs/clover.xml'
+          format: 'clover'
+  environment:
+    php:
+      version: 7.0
