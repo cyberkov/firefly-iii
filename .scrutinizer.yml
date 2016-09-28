@@ -14,4 +14,4 @@ build:
           format: 'clover'
   environment:
     php:
-      version: 7.0
+      version: '7.0.8'
