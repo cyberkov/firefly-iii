@@ -47,7 +47,7 @@
     "phpunit/phpunit": "~5.0",
     "symfony/css-selector": "3.1.*",
     "symfony/dom-crawler": "3.1.*",
-    "codeclimate/php-test-reporter": "^0.3.2"
+    "codeclimate/php-test-reporter": "dev-master"
   },
   "autoload": {
     "classmap": [
